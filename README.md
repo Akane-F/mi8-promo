@@ -2,7 +2,7 @@
 
 This is a promotional website built with HTML and CSS, inspired by the upcoming *Mission: Impossible – Final Reckoning* movie.
 
-##　Technologies
+## Technologies
 - HTML5
 - CSS
 
