@@ -39,19 +39,28 @@ header:active #nav-menus {
     float: right;
     text-align: center;
     height: 100vh;
-    width: 20vw;
-    color: rgb(255, 213, 0);
+    width: 25vw;
     transition: opacity 0.35s, transform 0.35s;
 }
 
 header:hover img,
 header:active img {
-    transform: translateX(-60px);
+    transform: translateX(-90px);
     transition: opacity 0.35s, transform 0.35s;
 }
 
 #nav-menus li {
     margin: 50px;
+}
+
+#nav-menus li a:link,
+#nav-menus li a:visited {
+    color: rgb(255, 213, 0);
+}
+
+#nav-menus li a:hover,
+#nav-menus li a:active {
+    color: red;
 }
 
 main {
@@ -62,4 +71,21 @@ main {
 
 .hero-image {
     width: 100vw;
+    height: 80vh;
+}
+
+#release-date {
+    color: #FFD700;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    margin: 20px;
+}
+
+#top-message {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    font-size: x-large;
+    margin: 10px;
 }
