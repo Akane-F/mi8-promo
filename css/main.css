@@ -13,6 +13,7 @@ body {
 header {
     position: relative;
     z-index: 2;
+    pointer-events: none;
 }
 
 header nav {
@@ -24,6 +25,7 @@ header img {
     max-height: 50px;
     margin: 20px;
     opacity: 1;
+    pointer-events: all;
 }
 
 header #nav-menus {
@@ -41,6 +43,7 @@ header:active #nav-menus {
     height: 100vh;
     width: 25vw;
     transition: opacity 0.35s, transform 0.35s;
+    pointer-events: all;
 }
 
 header:hover img,
@@ -191,4 +194,11 @@ h2 {
     text-transform: uppercase;
     font-size: x-large;
     margin: 30px;
+}
+
+#backtotop {
+    position: fixed;
+    bottom: calc(5% + 50px);
+    right: 25px;
+    max-height: 70px;
 }
