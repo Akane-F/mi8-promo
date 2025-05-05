@@ -97,13 +97,9 @@ main {
     width: 100vw;
 }
 
-#intro {
-    padding: 10px 10vw;
-}
-
+#intro,
 #cast {
     padding: 10px 10vw;
-    clear: both;
 }
 
 h2 {
