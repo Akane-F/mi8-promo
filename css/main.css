@@ -55,7 +55,10 @@ header:active img {
 
 #nav-menus li a:link,
 #nav-menus li a:visited {
+    font-family: 'Impact', 'Arial Black', sans-serif;
     color: rgb(255, 213, 0);
+    font-size: x-large;
+    letter-spacing: 3px;
 }
 
 #nav-menus li a:hover,
@@ -88,4 +91,87 @@ main {
     letter-spacing: 1px;
     font-size: x-large;
     margin: 10px;
+}
+
+.details-hero {
+    width: 100vw;
+}
+
+#intro {
+    padding: 10px 10vw;
+}
+
+#cast {
+    padding: 10px 10vw;
+    clear: both;
+}
+
+h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: 30px;
+}
+
+#intro div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+#intro-image {
+    max-width: 500px;
+}
+
+#intro article {
+    margin-right: 30px;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+#cast-list {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#ethan-image  {
+    grid-column: 2 / 4;
+    align-items: center;
+}
+
+.cast-image-box {
+    align-content: space-around;
+}
+
+.cast-image {
+    max-height: 350px;
+    aspect-ratio: 2 / 3;
+}
+
+#ethan-name {
+    align-content: center;
+}
+
+#ethan-name .role-name {
+    font-size: 40px;
+}
+
+#ethan-name .cast-name {
+    font-size: 20px;
+}
+
+.role-name {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.cast-name {
+    color: #FFD700;
+    text-transform: uppercase;
+    font-size: small;
 }
