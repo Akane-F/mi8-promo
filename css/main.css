@@ -98,7 +98,8 @@ main {
 }
 
 #intro,
-#cast {
+#cast,
+#series-list {
     padding: 10px 10vw;
 }
 
@@ -170,4 +171,24 @@ h2 {
     color: #FFD700;
     text-transform: uppercase;
     font-size: small;
+}
+
+.series img {
+    display: inline-block;
+    width: 15vw;
+    padding: 10px;
+}
+
+.series .series-description {
+    display: inline-block;
+    width: 60vw;
+    vertical-align: top;
+}
+
+.series-description p {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-size: x-large;
+    margin: 30px;
 }
