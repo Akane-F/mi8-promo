@@ -9,14 +9,14 @@
 body {
     background-color: black;
 }
-
+  
 header {
     position: relative;
-    z-index: 2;
-}
-
-header nav {
     float: right;
+    height: 100vh;
+    width: 25vw;
+    z-index: 2;
+    pointer-events: none;
 }
 
 header img {
@@ -24,9 +24,12 @@ header img {
     max-height: 50px;
     margin: 20px;
     opacity: 1;
+    pointer-events: all;
 }
 
 header #nav-menus {
+    clear: both;
+    padding-top: 10px;
     opacity: 0;
 }
 
@@ -36,17 +39,17 @@ header:hover #nav-menus,
 header:active #nav-menus {
     opacity: 1;
     background-color: black;
-    float: right;
     text-align: center;
     height: 100vh;
     width: 25vw;
-    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s;
+    pointer-events: all;
 }
 
 header:hover img,
 header:active img {
     transform: translateX(-90px);
-    transition: opacity 0.35s, transform 0.35s;
+    transition: transform 0.35s;
 }
 
 #nav-menus li {
@@ -67,7 +70,8 @@ header:active img {
 }
 
 main {
-    position: absolute;
+    position: relative;
+    top: -100vh;
     color: white;
     text-align: center;
 }
