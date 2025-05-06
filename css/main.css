@@ -56,16 +56,21 @@ header:active img {
     margin: 50px;
 }
 
-#nav-menus li a:link,
-#nav-menus li a:visited {
+#nav-menus li a.current-page {
+    color: orangered;
+    pointer-events: none;
+}
+
+#nav-menus a:link,
+#nav-menus a:visited {
     font-family: 'Impact', 'Arial Black', sans-serif;
     color: rgb(255, 213, 0);
     font-size: x-large;
     letter-spacing: 3px;
 }
 
-#nav-menus li a:hover,
-#nav-menus li a:active {
+#nav-menus  a:hover,
+#nav-menus a:active {
     color: red;
 }
 
