@@ -10,6 +10,9 @@ This is a promotional website built with HTML and CSS, inspired by the upcoming 
 - Introduction of the upcoming *Mission: Impossible – Final Reckoning* movie.
 
 ## Future Plans
+- Add more information and details.
+- Include other films.
+- Add new features such as user ratings, viewing history, and recommendations.
 
 ## Author
 Created by Akane Fukuda
