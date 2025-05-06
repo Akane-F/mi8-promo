@@ -18,18 +18,21 @@ header {
 
 header nav {
     float: right;
+    height: 100vh;
+    width: 25vw;
 }
 
 header img {
     float: right;
     max-height: 50px;
     margin: 20px;
-    opacity: 1;
     pointer-events: all;
 }
 
 header #nav-menus {
     opacity: 0;
+    clear: both;
+    padding-top: 10px;
 }
 
 header:hover nav,
@@ -38,10 +41,7 @@ header:hover #nav-menus,
 header:active #nav-menus {
     opacity: 1;
     background-color: black;
-    float: right;
     text-align: center;
-    height: 100vh;
-    width: 25vw;
     transition: opacity 0.35s, transform 0.35s;
     pointer-events: all;
 }
@@ -75,6 +75,7 @@ header:active img {
 }
 
 main {
+    display: block;
     position: absolute;
     color: white;
     text-align: center;
@@ -126,11 +127,14 @@ h2 {
 }
 
 #intro-image {
-    max-width: 500px;
+    flex: 7;
+    order: 1;
+    min-width: 0; /* Necessary for proper flex behavior */
 }
 
 #intro article {
-    margin-right: 30px;
+    flex: 8;
+    order: 2;
     font-size: medium;
     letter-spacing: 1px;
 }
@@ -139,7 +143,7 @@ h2 {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-
+    row-gap: 20px;
 }
 
 #ethan-image  {
@@ -157,7 +161,7 @@ h2 {
 }
 
 #ethan-name {
-    align-content: center;
+    align-self: center;
 }
 
 #ethan-name .role-name {
@@ -193,12 +197,33 @@ h2 {
     vertical-align: top;
 }
 
-.series-description p {
+.series-title {
     font-family: 'Impact', 'Arial Black', sans-serif;
     color: #FFD700;
     text-transform: uppercase;
     font-size: x-large;
     margin: 30px;
+}
+
+.series-credit {
+    margin: 15px;
+}
+
+.series-credit p {
+    display: inline;
+    color: white;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.series-credit p:last-child {
+    margin-right: 0;
+}
+
+.series-credit-key {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    margin-right: 5px;
 }
 
 footer {
