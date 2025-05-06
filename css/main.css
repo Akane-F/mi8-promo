@@ -196,9 +196,33 @@ h2 {
     margin: 30px;
 }
 
+footer {
+    width: calc(100vw - 40px);
+    margin: 80px 20px 10px 20px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a:link {
+    color: #c4b76b
+}
+
+footer a:visited {
+    color: rgb(153, 124, 52);;
+}
+
+footer a:hover,
+footer a:active {
+    color: red;
+}
+
 #backtotop {
     position: fixed;
-    bottom: calc(5% + 50px);
+    bottom: calc(5% + 68px);
     right: 25px;
     max-height: 70px;
 }
