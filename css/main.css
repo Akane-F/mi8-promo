@@ -115,6 +115,7 @@ main {
 h2 {
     font-family: 'Impact', 'Arial Black', sans-serif;
     font-size: 30px;
+    text-transform: uppercase;
     letter-spacing: 3px;
     margin: 30px;
 }
