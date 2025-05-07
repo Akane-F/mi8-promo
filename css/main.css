@@ -185,6 +185,55 @@ h2 {
     font-size: small;
 }
 
+#series-timeline-wrapper {   
+    overflow-x: auto; 
+    width: 100vw;
+    padding: 20px 100px 50px 100px;
+}
+
+#series-timeline {
+    display: grid;
+    grid-template-columns: repeat(12, 150px);
+    grid-template-rows: auto 50px 50px auto;
+}
+
+#series-timeline img {
+    grid-column: span 2;
+    width: 200px;
+    justify-self: center;
+    border: 4px solid #FFD700;
+}
+
+.timeline-img-top {
+    align-self: flex-end;
+}
+
+.space-between-image {
+    width: 200px;
+}
+
+#series-timeline p {
+    grid-column: span 2;
+}
+
+.timeline-year-for-bottom {
+    align-self: flex-end;
+    border-bottom: 3px solid white;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: x-large;
+}
+
+.timeline-year-for-top {
+    border-right: 3px solid white;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: x-large;
+}
+
+.space-between-year-for-bottom {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+
 .series img {
     display: inline-block;
     width: 15vw;
