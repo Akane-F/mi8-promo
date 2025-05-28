@@ -302,9 +302,8 @@ section {
 
 footer {
     width: 90vw;
-    margin: 5rem 1rem 1rem 1rem;
+    margin: 5rem 5vw 1rem 5vw;
     border-top: 1px solid white;
-    padding-top: 1rem;
 }
 
 footer p {
@@ -369,4 +368,9 @@ footer a:active {
     #ethan-name .cast-name {
         font-size: var(--font-large);
     }
+
+    footer {
+        width: 96vw;
+        margin: 5rem 2vw 1rem 2vw;
+        padding-top: 1rem;    }   
 }
