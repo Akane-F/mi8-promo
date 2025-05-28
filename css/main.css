@@ -151,34 +151,35 @@ section {
 
 #intro div {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
 }
 
 #intro-image {
-    flex: 7;
-    order: 1;
-    min-width: 0; /* Necessary for proper flex behavior */
+    max-height: 20rem;
 }
 
 #intro article {
-    flex: 8;
-    order: 2;
-    font-size: medium;
+    font-size: var(--font-medium);
     letter-spacing: 1px;
 }
 
 #cast-list {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
-#ethan-image  {
-    grid-column: 2 / 4;
-    align-items: center;
+#ethan-image {
+    order: -1;
+}
+
+#ethan-image img {
+    width: 80%;
+    height: auto;
 }
 
 .cast-image-box {
@@ -188,18 +189,6 @@ section {
 .cast-image {
     max-height: 20rem;
     aspect-ratio: 2 / 3;
-}
-
-#ethan-name {
-    align-self: center;
-}
-
-#ethan-name .role-name {
-    font-size: var(--font-xx-large);
-}
-
-#ethan-name .cast-name {
-    font-size: var(--font-large);
 }
 
 .role-name {
@@ -340,4 +329,44 @@ footer a:active {
     bottom: calc(5% + 4rem);
     right: 1rem;
     width: 5rem;
+}
+
+@media (min-width: 600px) {
+    #intro div {
+        flex-direction: row;
+    }
+
+    #intro-image {
+        flex: 7;
+        min-width: 0; /* Necessary for proper flex behavior */
+    }
+
+    #intro article {
+        flex: 8;
+    }
+
+    #cast-list {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1rem;
+    }
+    
+    #ethan-name  {
+        order: -2;
+    }
+
+    #ethan-image  {
+        order: -1;
+        grid-column: 2 / 4;
+        align-items: center;
+    }
+            
+    #ethan-name .role-name {
+        font-size: var(--font-xx-large);
+    }
+    
+    #ethan-name .cast-name {
+        font-size: var(--font-large);
+    }
 }
