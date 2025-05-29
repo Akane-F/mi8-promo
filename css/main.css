@@ -408,7 +408,7 @@ footer a:active {
 
     .series img {
         grid-area: image;
-        width: 20vw;
+        width: 40vw;
         height: auto;
         padding: 1rem;
     }
