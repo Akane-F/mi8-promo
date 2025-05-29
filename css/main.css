@@ -273,11 +273,6 @@ section {
     z-index: 1;
     background-color: black;
     border: 1px solid #FFD700 ;
-    grid-template-areas: 
-        "image title"
-        "image credit"
-        "image description"
-        "image description"
 }
 
 .close-series {
@@ -294,25 +289,19 @@ main:has(#mi4-toggle:checked) .series#mi4,
 main:has(#mi5-toggle:checked) .series#mi5,
 main:has(#mi6-toggle:checked) .series#mi6,
 main:has(#mi7-toggle:checked) .series#mi7 {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
 }
 
-
 .series img {
-    grid-area: image;
-    width: 20vw;
-    height: auto;
+    max-width: 80%;
+    height: 50%;
     padding: 1rem;
 }
 
-.series-description {
-    grid-area: description;
-    width: 55vw;
-    vertical-align: top;
-}
-
 .series-title {
-    grid-area: title;
     font-family: 'Impact', 'Arial Black', sans-serif;
     color: var(--color-yellow-2);
     text-transform: uppercase;
@@ -320,18 +309,9 @@ main:has(#mi7-toggle:checked) .series#mi7 {
     align-self: center;
 }
 
-.series-credit {
-    grid-area: credit;
-}
-
 .series-credit p {
-    display: inline;
+    display: block;
     font-size: var(--font-medium);
-    margin-right: 1rem;
-}
-
-.series-credit p:last-child {
-    margin-right: 0;
 }
 
 .series-credit-key {
@@ -409,6 +389,52 @@ footer a:active {
         font-size: var(--font-large);
     }
 
+    .series {
+        grid-template-areas: 
+            "image title"
+            "image credit"
+            "image description"
+            "image description"
+    }
+    
+    main:has(#mi1-toggle:checked) .series#mi1,
+    main:has(#mi2-toggle:checked) .series#mi2,
+    main:has(#mi3-toggle:checked) .series#mi3,
+    main:has(#mi4-toggle:checked) .series#mi4,
+    main:has(#mi5-toggle:checked) .series#mi5,
+    main:has(#mi6-toggle:checked) .series#mi6,
+    main:has(#mi7-toggle:checked) .series#mi7 {
+            display: grid;
+    }
+
+    .series img {
+        grid-area: image;
+        width: 20vw;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .series-description {
+        grid-area: description;
+    }
+    
+    .series-title {
+        grid-area: title;
+    }
+    
+    .series-credit {
+        grid-area: credit;
+    }
+    
+    .series-credit p {
+        display: inline;
+        margin-right: 1rem;
+    }
+    
+    .series-credit p:last-child {
+        margin-right: 0;
+    }
+        
     footer {
         width: 96vw;
         margin: 5rem 2vw 1rem 2vw;
