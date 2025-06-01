@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'SEG7';
+    src: url('../assets/fonts/G7_Segment_7a.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -349,6 +356,75 @@ footer a:active {
     width: 5rem;
 }
 
+section.timer {
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0;
+    font-family: 'SEG7', monospace;
+    font-size: 10rem;
+    width: fit-content;
+    max-width: 80vw;
+    justify-self: center;
+    padding: 1rem;
+    border: 1rem solid transparent;
+    border-image: linear-gradient(45deg, #666, #888, #777, #999, #555) 1;
+    opacity: 80%;
+}  
+
+.timer .digit {
+    display: flex;
+    position: relative;
+    width: 6rem;
+    aspect-ratio: 2 / 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-8 {
+    position: absolute;
+    z-index: 1;
+    color: lightgray;
+    opacity: 25%;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 2;
+    color: red;
+    opacity: 80%;
+    text-shadow:
+        0 0 3px #ff0000,
+        0 0 7px #ff1a1a,
+        0 0 15px #cc0000,
+        0 0 25px #990000,
+        0 0 45px #660000,
+        0 0 60px #440000;
+}
+
+.coron {
+    color: red;
+    opacity: 80%;
+    animation: redGlowBlink 1s infinite;
+}
+
+@keyframes redGlowBlink {
+    0%, 100% {
+      text-shadow:
+        0 0 3px #ff0000,
+        0 0 7px #ff1a1a,
+        0 0 15px #cc0000,
+        0 0 25px #990000,
+        0 0 45px #660000,
+        0 0 60px #440000;
+    }
+    50% {
+      text-shadow:
+        0 0 1px #660000,
+        0 0 2px #990000;
+      color: #440000;
+    }
+}
+  
 @media (min-width: 600px) {
     #intro div {
         flex-direction: row;
