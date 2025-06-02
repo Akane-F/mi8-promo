@@ -64,14 +64,14 @@ header {
 header div {
     float: right;
     height: 100vh;
-    width: 25vw;
+    width: 100vw;
 }
 
 header img {
     float: right;
-    width: 8rem;
+    width: 4rem;
     height: auto;
-    margin: 1.5rem;
+    margin: 2rem;
     pointer-events: all;
 }
 
@@ -94,8 +94,8 @@ header:active nav {
 
 header:hover img,
 header:active img {
-    transform: translateX(-90px);
-    transition: opacity 0.35s, transform 0.35s;
+    transform: translate(calc(-50vw + 4rem), 1rem)  rotate(-360deg);
+    transition: opacity 0.35s, transform 0.5s;
 }
 
 nav li {
@@ -426,6 +426,15 @@ section.timer {
 }
   
 @media (min-width: 600px) {
+    header div {
+        width: 25vw;
+    }
+    
+    header:hover img,
+    header:active img {
+        transform: translate(calc(-12.5vw + 4rem), 1rem) rotate(-360deg);
+    }
+
     #intro div {
         flex-direction: row;
     }
