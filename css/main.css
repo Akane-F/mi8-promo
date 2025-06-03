@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @font-face {
     font-family: 'SEG7';
     src: url('../assets/fonts/G7_Segment_7a.ttf') format('truetype');
@@ -11,6 +13,7 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :root {
