@@ -404,6 +404,16 @@ section.timer {
         0 0 60px #440000;
 }
 
+.data-4::after {
+    animation: changeNumberTo4 1s ease-in;
+    content: "4";
+}  
+
+.data-0::after {
+    animation: changeNumberTo4 1s ease-in;
+    content: "0";
+}  
+
 .coron {
     color: red;
     opacity: 80%;
@@ -426,6 +436,34 @@ section.timer {
         0 0 2px #990000;
       color: #440000;
     }
+}
+
+@keyframes changeNumberTo4 {
+    0%   { content: "9"; }
+    10%  { content: "8"; }
+    20%  { content: "7"; }
+    30%  { content: "6"; }
+    40%  { content: "5"; }
+    50%  { content: "4"; }
+    60%  { content: "3"; }
+    70%  { content: "2"; }
+    80%  { content: "1"; }
+    90%  { content: "0"; }
+    100% { content: "4"; }
+}
+
+@keyframes changeNumberTo0 {
+    0%   { content: "9"; }
+    10%  { content: "8"; }
+    20%  { content: "7"; }
+    30%  { content: "6"; }
+    40%  { content: "5"; }
+    50%  { content: "4"; }
+    60%  { content: "3"; }
+    70%  { content: "2"; }
+    80%  { content: "1"; }
+    90%  { content: "0"; }
+    100% { content: "0"; }
 }
 
 section#faq {
