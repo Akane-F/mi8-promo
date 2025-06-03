@@ -286,9 +286,14 @@ section {
 .close-series {
     display: block;
     position: absolute;
-    top: 1.5rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     font-size: var(--font-xx-large);
+}
+
+.close-series img.close {
+    width: 6rem;
+    height: auto;
 }
 
 main:has(#mi1-toggle:checked) .series#mi1,
@@ -594,14 +599,17 @@ details > *:not(summary)::before {
     
     .series-description {
         grid-area: description;
+        align-self: start;
     }
     
     .series-title {
         grid-area: title;
+        align-self: end;
     }
     
     .series-credit {
         grid-area: credit;
+        align-self: start;
     }
     
     .series-credit p {
