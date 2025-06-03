@@ -354,7 +354,7 @@ footer a:active {
 
 .backtotop {
     position: fixed;
-    bottom: calc(5% + 4rem);
+    bottom: 3%;
     right: 1rem;
     width: 5rem;
 }
