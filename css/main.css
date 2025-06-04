@@ -366,7 +366,11 @@ footer a:active {
     width: 5rem;
 }
 
-section.timer {
+#timer-area {
+    min-height: 100vh;
+}
+
+.timer {
     display: flex;
     justify-content: center;
     margin: 8rem 0;
@@ -394,7 +398,7 @@ section.timer {
     position: absolute;
     z-index: 1;
     color: lightgray;
-    opacity: 25%;
+    opacity: 20%;
 }
 
 .foreground {
