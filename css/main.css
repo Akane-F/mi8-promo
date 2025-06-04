@@ -714,4 +714,8 @@ input.subject {
     #contact-forms {
         width: 70vw;
     }
+
+    #timer-area section{
+        min-height: 100vh;
+    }    
 }
