@@ -307,8 +307,6 @@ main:has(#mi7-toggle:checked) .series#mi7 {
         flex-direction: column;
         align-items: center;
         row-gap: 2rem;
-        animation-name: fadeIn;
-        animation-duration: 1s;      
 }
 
 .series img {
