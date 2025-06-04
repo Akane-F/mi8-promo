@@ -421,7 +421,7 @@ footer a:active {
 }  
 
 .data-0::after {
-    animation: changeNumberTo4 1s ease-in;
+    animation: changeNumberTo0 1s ease-in;
     content: "0";
 }  
 
