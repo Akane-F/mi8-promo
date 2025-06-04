@@ -564,12 +564,14 @@ input.subject {
 .contact-form input {
     min-height: 2rem;
     width: 100%;
+    padding: 0.5rem 1rem;
 }
 
 .contact-form textarea {
     min-height: 5rem;
     width: 100%;
     resize: none;
+    padding: 0.5rem 1rem;
 }
 
 #contact-forms button {
