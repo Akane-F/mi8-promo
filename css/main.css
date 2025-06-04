@@ -513,7 +513,7 @@ summary::after {
 }
 
 details[open] summary::after {
-    content: '-';
+    content: 'ｰ';
 }
 
 details > *:not(summary) {
