@@ -473,7 +473,8 @@ section.timer {
     100% { content: "0"; }
 }
 
-section#faq {
+section#faq,
+section#contact {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -481,7 +482,8 @@ section#faq {
     justify-content: center;
 }
 
-details {
+details,
+#contact-forms {
     background: rgb(39, 36, 34);
     border-radius: 8px;
     box-shadow:
@@ -490,6 +492,7 @@ details {
         0 4px 12px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     text-align: start;
+    width: 90vw;
 }
 
 summary {
@@ -525,7 +528,66 @@ details > *:not(summary)::before {
     font-size: var(--font-medium);
     content: '\2003-\2003';
 }
-  
+
+#contact-forms {
+    display: grid;
+    padding: 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, minmax(3rem, auto));
+    align-items: center;
+}
+
+#contact-forms label {
+    font-weight: bold;
+}
+
+#subject-area,
+#button-area {
+    grid-column: 2 / 5;
+}
+
+#button-area {
+    display: flex;
+    justify-content: end;
+}
+
+input.subject {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.contact-form {
+    grid-column: 2 / 5;
+}
+
+.contact-form input {
+    min-height: 2rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    min-height: 5rem;
+    width: 100%;
+    resize: none;
+}
+
+#contact-forms button {
+    padding: 0.8rem;
+    background: black;
+    border-radius: 8px;
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.05),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.7);
+
+    color: white;
+    font-weight: bold;
+    font-size: var(--font-medium);
+    letter-spacing: 2px;
+
+}
+
 @media (min-width: 600px) {
     header div {
         width: 25vw;
@@ -629,7 +691,8 @@ details > *:not(summary)::before {
         padding-top: 1rem;
     }
     
-    details {
+    details,
+    #contact-forms {
         width: 70vw;
     }
 }
