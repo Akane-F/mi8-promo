@@ -366,14 +366,15 @@ footer a:active {
     width: 5rem;
 }
 
-#timer-area {
+#main-404 {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
-
 .timer {
     display: flex;
     justify-content: center;
-    margin: 8rem 0;
+    margin-top: 8rem;
     font-family: 'SEG7', monospace;
     font-size: 10rem;
     width: fit-content;
@@ -475,6 +476,36 @@ footer a:active {
     80%  { content: "1"; }
     90%  { content: "0"; }
     100% { content: "0"; }
+}
+
+#message-area {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    color: #777;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#message-area p {
+    font-size: 5rem;
+}
+
+#message-area a {
+    background: #cd0909;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #c5c3c3;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow:
+        0 0 7px #cd0909,
+        0 0 15px #cc0000,
+        0 0 25px #990000,
+        0 0 45px #660000,
+        0 0 60px #440000;
+    opacity: 70%;
 }
 
 section#faq,
@@ -714,8 +745,4 @@ input.subject {
     #contact-forms {
         width: 70vw;
     }
-
-    #timer-area section{
-        min-height: 100vh;
-    }    
 }
