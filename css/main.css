@@ -141,14 +141,14 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: var(--font-xx-large);
-    margin: 1.5rem 0;
+    margin: 1.5rem;
 }
 
 #top-message {
     font-family: 'Impact', 'Arial Black', sans-serif;
     letter-spacing: 0.1rem;
     font-size: var(--font-large);
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 .details-hero {
